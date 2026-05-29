@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  DEBUG-ONLY manifest. Merged only into debug builds. Declares the test-call
+  harness (a managed ConnectionService + triggers) used to exercise the real
+  CallScreeningService path on a physical device without placing a real call.
+  None of this exists in release builds.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.REGISTER_CALL_PROVIDER" />
+    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS" />
+
+    <application>
+
+        <!-- Managed ConnectionService backing the synthetic test calls. -->
+        <service
+            android:name=".debug.TestConnectionService"
+            android:exported="true"
+            android:permission="android.permission.BIND_TELECOM_CONNECTION_SERVICE">
+            <intent-filter>
+                <action android:name="android.telecom.ConnectionService" />
+            </intent-filter>
+        </service>
+
+        <!-- adb-driven trigger. -->
+        <receiver
+            android:name=".debug.TestCallReceiver"
+            android:exported="true" />
+
+        <!-- Debug launcher with buttons (separate icon in the launcher). -->
+        <activity
+            android:name=".debug.DebugActivity"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_debug"
+            android:roundIcon="@mipmap/ic_launcher_debug"
+            android:label="Steintroll Debug"
+            android:taskAffinity="no.netspire.steintroll.debug"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>

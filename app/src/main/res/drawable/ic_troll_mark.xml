@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Full-bleed Steintroll mark for in-app use (e.g. next to the title). Same art as the
+  launcher foreground but without the adaptive-icon safe-zone insets, and no background.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="40dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- SUN core (top-right) -->
+    <path android:fillColor="#F7B733" android:pathData="M80,30 m-9,0 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0 Z" />
+    <!-- SUN rays -->
+    <path android:fillColor="#F7B733" android:pathData="M78.7,12 h2.6 v8 h-2.6 z" />
+    <path android:fillColor="#F7B733" android:pathData="M78.7,40 h2.6 v6 h-2.6 z" />
+    <path android:fillColor="#F7B733" android:pathData="M62,28.7 h5 v2.6 h-5 z" />
+    <path android:fillColor="#F7B733" android:pathData="M94,28.7 h4 v2.6 h-4 z" />
+    <path android:fillColor="#F7B733" android:pathData="M66,16.3 l1.8,-1.8 2.8,2.8 -1.8,1.8 z" />
+    <path android:fillColor="#F7B733" android:pathData="M91.4,17.3 l-1.8,-1.8 -2.8,2.8 1.8,1.8 z" />
+    <path android:fillColor="#F7B733" android:pathData="M66,43.7 l1.8,1.8 2.8,-2.8 -1.8,-1.8 z" />
+    <path android:fillColor="#F7B733" android:pathData="M91.4,42.7 l-1.8,1.8 -2.8,-2.8 1.8,-1.8 z" />
+
+    <!-- Ears -->
+    <path android:fillColor="#5F8050" android:pathData="M26,52 q-11,-5 -11,5 q3,8 12,3 Z" />
+    <path android:fillColor="#9AA3AD" android:pathData="M74,52 q11,-5 11,5 q-3,8 -12,3 Z" />
+
+    <!-- Head split -->
+    <path android:fillColor="#5F8050" android:pathData="M30,64 q-6,-30 21,-31 l0,62 q-21,-2 -21,-16 Z" />
+    <path android:fillColor="#9AA3AD" android:pathData="M51,33 q28,1 22,31 q1,14 -22,16 Z" />
+
+    <!-- Brow -->
+    <path android:strokeColor="#2F3B27" android:strokeWidth="4.5" android:strokeLineCap="round"
+        android:pathData="M33,46 q9,-7 17,-3" />
+    <path android:strokeColor="#5B636D" android:strokeWidth="4.5" android:strokeLineCap="round"
+        android:pathData="M52,43 q9,-4 17,0" />
+
+    <!-- Eyes -->
+    <path android:fillColor="#1C140A" android:pathData="M42,54 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0 Z" />
+    <path android:fillColor="#FFD24A" android:pathData="M43.4,52.8 m-1.4,0 a1.4,1.4 0 1,0 2.8,0 a1.4,1.4 0 1,0 -2.8,0 Z" />
+    <path android:fillColor="#5B636D" android:pathData="M60,54 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0 Z" />
+
+    <!-- Nose -->
+    <path android:fillColor="#557049" android:pathData="M50,52 q-8,8 -6,16 q6,5 13,1 q3,-10 -3,-17 Z" />
+    <path android:fillColor="#AAB2BB" android:pathData="M53,52 q5,7 4,16 q-3,1.5 -7,0.5 Z" />
+
+    <!-- Mouth + tusks -->
+    <path android:fillColor="#20160D" android:pathData="M40,74 q11,6 21,0 q-2,5 -10,5 q-9,0 -11,-5 Z" />
+    <path android:fillColor="#EEF0E6" android:pathData="M45,74 l-2,-8 5,0 Z" />
+    <path android:fillColor="#EEF0E6" android:pathData="M57,74 l2,-8 -5,0 Z" />
+
+    <!-- Cracks -->
+    <path android:strokeColor="#E8EDF2" android:strokeWidth="1.6" android:strokeLineCap="round"
+        android:pathData="M61,38 l3,8 -2,5" />
+    <path android:strokeColor="#E8EDF2" android:strokeWidth="1.6" android:strokeLineCap="round"
+        android:pathData="M66,56 l-4,4" />
+</vector>
